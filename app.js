@@ -24,7 +24,7 @@ function matchCards(img1, img2) {
         if (matchedcard == 8) {
             setTimeout(() => {
                 return shuffleCard();
-            }, 1000);
+            }, 500);
         }
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
@@ -41,7 +41,7 @@ function matchCards(img1, img2) {
         cardTwo.classList.remove("shake", "flip");
         cardOne = cardTwo = '';
         disableDeck = false;
-    }, 1200);
+    }, 500);
 }
 
 function shuffleCard() {
